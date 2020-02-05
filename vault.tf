@@ -71,6 +71,13 @@ resource "helm_release" "vault" {
   name          = "vault"
   chart         = "./helm/vault-helm"
   namespace     = kubernetes_namespace.demo.metadata.0.name
+
+  set {
+    name  = "server.dev.enabled"
+    value = "true"
+  }
+
+  depends_on = [kubernetes_cluster_role_binding.helm_role_binding]
 }
 
 

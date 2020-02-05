@@ -2,3 +2,7 @@ creds/*
 .terraform/*
 terraform.tfvars
 terraform.tfstate*
+vault_polices/.terraform/*
+vault_polices/terraform.tfvars
+vault_polices/terraform.tfstate*
+
