@@ -107,6 +107,8 @@ Additionaly we will also create two KV stores for two different teams (Dev-A and
 2. Run Terraform:
 
     ```
+    cd vault_policies
+    
     terraform init
     terraform plan
     terraform apply
